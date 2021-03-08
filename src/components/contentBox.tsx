@@ -8,7 +8,7 @@ export const ContentBox = (props: any) => {
     }) : [];
     return (
         <div id="content">
-          <h1>{disruptionHeader}</h1>
+          <h1 className="contentHeader">{disruptionHeader}</h1>
           <ul>{disruptionDetails}</ul>
         </div>
     );

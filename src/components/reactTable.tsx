@@ -9,13 +9,14 @@ const columns = [
     //Destructure args for columns Cell to extract relevant Line data
     Cell: ({value, row}: {value:any, row:any}) => {
       return(
-        <div>
-          {value} 
-          {" "}
-          {row.original.serviceTypes.some((timeOfDay: any) => timeOfDay.name === "Night") ? "☾ " : ""} 
-          {" "}
-          {row.original.lineStatuses.some((badStatus: any) => badStatus.statusSeverity !== 10) ? "⚠ " :""}
-        </div>
+          <div className={value.split(" ")[0]} id="lineName">
+            {" "}
+            {value} 
+            {" "}
+            {row.original.serviceTypes.some((timeOfDay: any) => timeOfDay.name === "Night") ? " ☾ " : " "} 
+            {" "}
+            {row.original.lineStatuses.some((badStatus: any) => badStatus.statusSeverity !== 10) ? " ⚠ " : " "}
+          </div>
       )
     }
   },

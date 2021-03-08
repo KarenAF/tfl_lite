@@ -1,6 +1,7 @@
 import './App.css';
 import React, {Component } from 'react';
 import { ReactTable } from "./components/reactTable";
+import { Cycle } from "./components/cycle";
 import axios from 'axios';
 
 class App extends Component {
@@ -34,8 +35,11 @@ render(){
   } else
     return (
          <div id="wrapper">
-            <h1 id="header">Transport For London</h1>
+           <div>
+            <h1 id="header">TFL (Transport For London) Service Status</h1>
             <ReactTable tableData = {this.state.response.data}/>
+          </div>
+          <Cycle/>
          </div>
     );
   }

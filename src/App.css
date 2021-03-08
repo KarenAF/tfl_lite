@@ -78,21 +78,105 @@ table {
  }
 
  #menu {
-  flex: 0 350px ;
+  flex: 0 350px;
+  margin-top: 20px;
 	padding: 10px;
-	border-right: 1px solid #000;
+  font-weight: bold;
 }
 
 #content {
-  flex: 0 550px ;
+  flex: 0 550px;
 	border-left: 1px solid #000;
 	padding: 10px;
 	line-height: 2em;
 }
 
+#footer {
+  flex: 1 550px;
+  padding: 10px;
+  flex: 0 350px;
+}
+
 .clearer {
 	clear: both;
 }
+
+.contentHeader {
+  margin-left: 20px;
+	text-align: left;
+}
+
+#lineName {
+  white-space: pre;
+}
+
+/*Start line-name-specific CSS, dynamic: */
+.Bakerloo {
+  background-color: #996633;
+  color: white;
+}
+
+.Central {
+  background-color: #CC3333;
+  color: white;
+}
+
+.Circle {
+	background-color: #FFCC00;
+  color: black;
+}
+
+.District {
+	background-color: #006633;
+  color: white;
+}
+
+.DLR {
+  background-color: #009999;
+  color: white;
+}
+
+.Hammersmith {
+  background-color: #CC9999;
+  color: white;
+}
+
+.Jubilee {
+	background-color: #868F98;
+  color: white;
+}
+
+.London {
+	background-color: #FF6600;
+  color: white;
+}
+
+.Metropolitan {
+	background-color: #660066;
+  color: white;
+}
+
+.Northern {
+	background-color: black;
+  color: white;
+}
+
+.Piccadilly {
+	background-color: #0019a8;
+  color: white;
+}
+
+.Victoria {
+	background-color: #0099CC;
+  color: white;
+}
+
+.Waterloo {
+	background-color: #66CCCC;
+  color: white;
+}
+
+/*End line-name-specific CSS, dynamic: */
 
 @keyframes App-logo-spin {
   from {
