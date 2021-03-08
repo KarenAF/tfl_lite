@@ -13,9 +13,9 @@ const columns = [
             {" "}
             {value} 
             {" "}
-            {row.original.serviceTypes.some((timeOfDay: any) => timeOfDay.name === "Night") ? " ☾ " : " "} 
+            {row.original.serviceTypes.some((timeOfDay: any) => timeOfDay.name === "Night") ? "  ☾ " : " "} 
             {" "}
-            {row.original.lineStatuses.some((badStatus: any) => badStatus.statusSeverity !== 10) ? " ⚠ " : " "}
+            {row.original.lineStatuses.some((badStatus: any) => badStatus.statusSeverity !== 10) ? "⚠ " : " "}
           </div>
       )
     }
@@ -30,11 +30,13 @@ const columns = [
 export const ReactTable = (props: any) => {
     //useState hook to change the currentLineStatuses using setCurrentLineStatuses callback
     const [currentLineStatuses, setCurrentLineStatuses] = useState(null);
+    const [currentLineName, setCurrentLineName] = useState(null);
     const data = props.tableData;
 
     function getDisruptions(index: number){
       console.log('get disruptions was called')
       setCurrentLineStatuses(data[index].lineStatuses);
+      setCurrentLineName(data[index].name);
     };
 
 
@@ -76,7 +78,7 @@ export const ReactTable = (props: any) => {
             </tbody>
           </table>
         </div>
-       {currentLineStatuses && <ContentBox lineStatuses = {currentLineStatuses}/>}
+       {currentLineStatuses && <ContentBox lineStatuses = {currentLineStatuses} lineName = {currentLineName}/>}
       </div>
     );
 }
