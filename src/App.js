@@ -33,8 +33,8 @@ render(){
     );
   } else
     return (
-         <div>
-            <h1>Transport For London</h1>
+         <div id="wrapper">
+            <h1 id="header">Transport For London</h1>
             <ReactTable tableData = {this.state.response.data}/>
          </div>
     );

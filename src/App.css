@@ -62,9 +62,37 @@ table {
   margin-left: 20px;
  }
 
- .content-box {
-  margin-left: 100px;
+ .tableHeaderStyle{
+   text-align: left;
  }
+
+ #wrapper {
+  border: 1px solid #000;
+	width: 1000px;
+	margin: auto;
+ }
+
+ #header {
+  padding: 10px;
+  background-color: #eee;
+ }
+
+ #menu {
+  flex: 0 350px ;
+	padding: 10px;
+	border-right: 1px solid #000;
+}
+
+#content {
+  flex: 0 550px ;
+	border-left: 1px solid #000;
+	padding: 10px;
+	line-height: 2em;
+}
+
+.clearer {
+	clear: both;
+}
 
 @keyframes App-logo-spin {
   from {

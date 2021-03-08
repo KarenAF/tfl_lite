@@ -49,12 +49,12 @@ export const ReactTable = (props: any) => {
     });
 
     return (
-      <div className="flex-container">
-        <div>
+      <div className="flex-container" id="wrapper">
+        <div id="menu">
           <table {...getTableProps()}>
             <thead>
               {headerGroups.map((headerGroup) => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
+                <tr  className="tableHeaderStyle" {...headerGroup.getHeaderGroupProps()}>
                   {headerGroup.headers.map((column) => (
                     <th {...column.getHeaderProps()}>{column.render("Header")}</th>
                   ))}

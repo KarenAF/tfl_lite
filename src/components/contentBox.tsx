@@ -7,7 +7,7 @@ export const ContentBox = (props: any) => {
         return <li> {Disruption.validityPeriods[0].fromDate + ': ' + Disruption.reason} </li>;
     }) : [];
     return (
-        <div className="content-box">
+        <div id="content">
           <h1>{disruptionHeader}</h1>
           <ul>{disruptionDetails}</ul>
         </div>
