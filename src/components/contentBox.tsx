@@ -16,7 +16,7 @@ export const ContentBox = (props: any) => {
 
     return (
         <div id="content">
-        <div className={getDynamicCSS(lineName)} >
+        <div className={getDynamicCSS(lineName)}>
           <h2 className="contentHeader"> {" "} {contentLineName}</h2>
         </div>
           <h3 className="contentHeader">{disruptionHeader}</h3>

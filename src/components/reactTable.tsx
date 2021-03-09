@@ -40,6 +40,9 @@ export const ReactTable = (props: any) => {
       setCurrentLineName(data[index].name);
     };
 
+    function introMessage(){
+      return <h3 className="contentHeader">Click on a line to see status details</h3>;
+    };
 
     const {
       getTableProps,
@@ -79,7 +82,7 @@ export const ReactTable = (props: any) => {
             </tbody>
           </table>
         </div>
-       {currentLineStatuses && <ContentBox lineStatuses = {currentLineStatuses} lineName = {currentLineName}/>}
+       {currentLineStatuses ? <ContentBox key="contentBoxKey" lineStatuses = {currentLineStatuses} lineName = {currentLineName}/> : introMessage()}
       </div>
     );
 }

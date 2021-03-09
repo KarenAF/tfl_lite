@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CycleSearch } from './cycleSearch'
 
 export const CycleHire = (props: any) => {
   //useState hook to change searchTerm
@@ -9,26 +10,19 @@ export const CycleHire = (props: any) => {
     setSearchTerm(e.target.value);
   };
 
-  function dynamicSearch() {
-    const filteredData = data.filter((object: any) => object.commonName.toLowerCase().includes(searchTerm.toLowerCase()) 
-    || object.id.toString().toLowerCase().includes(searchTerm.toLowerCase())
-    || object.lat.toString().toLowerCase().includes(searchTerm.toLowerCase())
-    || object.lon.toString().toLowerCase().includes(searchTerm.toLowerCase()));
-    return filteredData.map((object: any)=> <p>{object.id.split("_")[1]} {object.commonName} ({object.lat}, {object.lat})</p>)
-  };
-
   return (
       <div className="bikePanel">
         <div>
         <h3 className="searchBar">Enter search value:</h3>
           <input className="inputBar" type="text" value={searchTerm} onChange={editSearchTerm} placeholder='Search TFL for available cycles for hire'/>
+          <img className="img2" src="boris-bike.png" alt="bike hire"/>
         </div>
         <div className="bikeContent">
           <br/>
           <b>Search results:</b>
           <br/>
           <br/>
-          {dynamicSearch()}
+          <CycleSearch key="cycleSearchKey" data = {data} searchTerm = {searchTerm} />
         </div>
       </div>
   );
