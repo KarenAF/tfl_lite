@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTable } from 'react-table';
-import { ContentBox } from './contentBox';
+import { ContentBox, getDynamicCSS } from './contentBox';
 
 // columns defined outside of export function to prevent react-table from calling it infinitely and crashing.
 const columns = [
@@ -10,7 +10,7 @@ const columns = [
     //Destructure args for columns Cell to extract relevant Line data
     Cell: ({value, row}: {value:any, row:any}) => {
       return(
-          <div className={value.split(" ")[0]} id="lineName">
+          <div className={getDynamicCSS(value)} id="lineName">
             {" "}
             {value} 
             {" "}
