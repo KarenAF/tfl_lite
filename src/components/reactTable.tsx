@@ -36,7 +36,6 @@ export const ReactTable = (props: any) => {
     const data = props.tableData.sort((a: any, b: any) => a.modeName.localeCompare(b.modeName) || a.name - b.name);
 
     function getDisruptions(index: number){
-      console.log('get disruptions was called')
       setCurrentLineStatuses(data[index].lineStatuses);
       setCurrentLineName(data[index].name);
     };

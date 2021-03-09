@@ -17,9 +17,7 @@ export const CycleHire = (props: any) => {
     return filteredData.map((object: any)=> <p>{object.id.split("_")[1]} {object.commonName} ({object.lat}, {object.lat})</p>)
   };
 
-  console.log(data);
-
-    return (
+  return (
       <div className="bikePanel">
         <div>
         <h3 className="searchBar">Enter search value:</h3>
@@ -33,5 +31,5 @@ export const CycleHire = (props: any) => {
           {dynamicSearch()}
         </div>
       </div>
-    );
+  );
 }

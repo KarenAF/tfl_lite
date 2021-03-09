@@ -1,12 +1,12 @@
 export const ContentBox = (props: any) => {
     const { lineStatuses, lineName } = props; 
-    const Disruptions = (lineStatuses ?? []).filter((object:any) => object.statusSeverity !== 10);
-    const hasDisruption = Disruptions.length > 0;
+    const disruptions = (lineStatuses ?? []).filter((object:any) => object.statusSeverity !== 10);
+    const hasDisruption = disruptions.length > 0;
     const contentLineName = lineName + ': ';
     const disruptionHeader = hasDisruption ? 'Service Currently Suffering Disruptions' : 'No Service Disruption.';
     const disruptionFooter = hasDisruption ? 'We appreciate your patience as our team works diligently to restore service to normal.' : 'Thank you for using TFL. Cheerio!';
-    const disruptionDetails = hasDisruption ? Disruptions.map((Disruption: any) => {
-        return <li> {Disruption.validityPeriods[0].fromDate + ': ' + Disruption.reason} </li>;
+    const disruptionDetails = hasDisruption ? disruptions.map((disruption: any) => {
+        return <li> {disruption.validityPeriods[0].fromDate + ': ' + disruption.reason} </li>;
     }) : [];
     return (
         <div id="content">
