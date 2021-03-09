@@ -1,7 +1,7 @@
 import './App.css';
 import React, {Component } from 'react';
 import { ReactTable } from "./components/reactTable";
-import { Cycle } from "./components/cycle";
+import { CycleHire } from "./components/cycleHire";
 import axios from 'axios';
 
 class App extends Component {
@@ -14,32 +14,37 @@ class App extends Component {
   };
 
   async componentDidMount(){
+  // Define TFL API requests
   var tflAPI = 'https://api.tfl.gov.uk/Line/Mode/tube,overground,dlr/Status?detail=true';
+  var tflBikeAPI = 'https://api.tfl.gov.uk/BikePoint/Search?query=regent';
   // Make data request
-  const response = await axios.get(tflAPI)
+  const lineResponse = await axios.get(tflAPI)
+  const bikeResponse = await axios.get(tflBikeAPI)
 
   // Update state with line data
   this.setState({
-    response,
+    lineResponse,
+    bikeResponse,
     isLoading: false
   });
   //End of setState
   }
 
 render(){
-  console.log(this.state);
   if(this.state.isLoading){
     return (
       <div><p>loading</p></div>
     );
   } else
+    // Pass the data from the two API requests to ReactTable CycleHire components respectively via props.
     return (
          <div id="wrapper">
            <div>
             <h1 id="header">TFL (Transport For London) Service Status</h1>
-            <ReactTable tableData = {this.state.response.data}/>
+            <ReactTable tableData = {this.state.lineResponse.data}/>
           </div>
-          <Cycle/>
+            <h1 id="footer"> Cycles for Hire </h1>
+          <CycleHire bikeData = {this.state.bikeResponse}/>
          </div>
     );
   }

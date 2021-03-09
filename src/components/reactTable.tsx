@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTable } from 'react-table';
 import { ContentBox } from './contentBox';
 
+// columns defined outside of export function to prevent react-table from calling it infinitely and crashing.
 const columns = [
   {
     Header: "Line",
@@ -28,7 +29,7 @@ const columns = [
 
 
 export const ReactTable = (props: any) => {
-    //useState hook to change the currentLineStatuses using setCurrentLineStatuses callback
+    //useState hook to change currentLineStatuses using setCurrentLineStatuses callback; for conditional rendering
     const [currentLineStatuses, setCurrentLineStatuses] = useState(null);
     const [currentLineName, setCurrentLineName] = useState(null);
     //use localeCompare and arrow function (es6) with sort to order rows by mode(i.e. modeName) then line(i.e. name).
