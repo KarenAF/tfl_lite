@@ -31,7 +31,8 @@ export const ReactTable = (props: any) => {
     //useState hook to change the currentLineStatuses using setCurrentLineStatuses callback
     const [currentLineStatuses, setCurrentLineStatuses] = useState(null);
     const [currentLineName, setCurrentLineName] = useState(null);
-    const data = props.tableData;
+    //use localeCompare and arrow function (es6) with sort to order rows by mode(i.e. modeName) then line(i.e. name).
+    const data = props.tableData.sort((a: any, b: any) => a.modeName.localeCompare(b.modeName) || a.name - b.name);
 
     function getDisruptions(index: number){
       console.log('get disruptions was called')
