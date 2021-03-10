@@ -40,9 +40,9 @@ class App extends Component {
 render(){
   if(this.state.isLoading){
     return (
-      <div>
+      <div className="loadingIndicator">
         <span><p>loading</p></span>
-        <img src="boris-riding.png" alt="Boris on a bike"/>
+        <img className="loadingPicture" src="boris-riding.png" alt="Boris on a bike"/>
       </div>
     );
   } else

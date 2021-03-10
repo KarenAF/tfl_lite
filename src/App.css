@@ -109,6 +109,15 @@ table {
   min-height: 400px;
 }
 
+.loadingIndicator {
+  text-align: center;
+  padding: 40px;
+}
+
+.loadingPicture {
+  height: 600px;
+}
+
 .searchBar {
   margin-top: 20px;
   padding: 20px;

@@ -51,11 +51,17 @@
 
 ## Screenshots
 
-![screenshot_1](tfl-lite_screenshot_1.png)
+App upon loading
+![screenshot_1](public/tfl-lite_screenshot_1.png)
 
-![screenshot_2](tfl-lite_screenshot_2.png)
+Clicking on a line name with a service disruption
+![screenshot_2](public/tfl-lite_screenshot_2.png)
 
-![screenshot_3](tfl-lite_screenshot_3.png)
+Results being filtered by search term '34'
+![screenshot_3](public/tfl-lite_screenshot_3.png)
+
+Waiting for app to load 
+![Boris](public/boris-screenshot.png)
 
 <br />
 
