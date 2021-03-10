@@ -1,7 +1,7 @@
 # TFL LITE
 **by Karen Liu**
 
-*This React app, generated using [`create-react-app`](https://github.com/facebookincubator/create-react-app) in the command line, pulls data from the official [TFL (Transport for London) API](https://api.tfl.gov.uk/) and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (`App.js` is regular JS). It greets the user with the whimsy of Boris Johnson riding one of his Boris-bikes on the loading screen. The colors used for the line names are the [official hex colors](http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf) used by TFL.*
+*This React app, generated using [`create-react-app`](https://github.com/facebookincubator/create-react-app) in the command line, pulls data from the official [TFL (Transport for London) API](https://api.tfl.gov.uk/) and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (`App.js` is regular JS). It greets the user with the whimsy of Prime Minister Johnson riding one of his Boris bikes on the loading screen. The colors used for the line names are the [official hex colors](http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf) used by TFL.*
 
 <sub><sup>*Note: The screenshots and screencapture were taken before the line-name colors were updated to the latest official TFL color guide. The [original color guide](https://rodcorp.typepad.com/rodcorp/2005/07/what_colours_ar.html) used was from 2005. The app is currently updated to reflect the new line colors.* </sup></sub>
 
