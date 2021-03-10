@@ -64,7 +64,8 @@ Clicking on a line name with a service disruption
 Results being filtered by search term '34'
 ![screenshot_3](public/tfl-lite_screenshot_3.png)
 
-Waiting for app to load 
+Waiting for app to load
+<br />
 ![Boris](public/boris-screenshot.png)
 
 <br />
