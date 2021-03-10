@@ -1,18 +1,18 @@
 # TFL LITE
 **by Karen Liu**
 
-*This React app pulls data from the official TFL API and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (though App.js is regular JS). It also treats the user to a whimsical picture of Boris Johnson riding a bicycle on the loading screen because... Boris Johnson. The colors used for the line Names are the official hex colors used by TFL.*
+*This React app pulls data from the official TFL (Transport for London) API and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (App.js is regular JS). It also treats the user to a whimsical picture of Boris Johnson riding a bicycle on the loading screen. The colors used for the line Names are the official hex colors used by TFL.*
 
 ## Dependencies and Tech:
 `React-Table (version 7.6.3)`
 
 `React-table Types (version 7.0.29)`
 
-*I chose React-table because it's a highly-customizable table library with a lot of users. The documentation is weak; however, for this exercise, I didn't need a lot of table features, so I felt safe using it. That was until I discovered that the typescript types defined in react-table are not compatible with the way react-table is used. I worked around it by using "any" as the type for the columns and data. However, I would normally try to stick to the proposed types when using TypeScript.*
+*I chose to use the React-table library because it's highly-customizable with a lot of users and reviews, which means it's relatively easy to find solutions to issues I might run into. The documentation is weak; however, for this exercise I didn't need a lot of table features. For future projects I may try a different library with better documentation and better support for Typescript. After leveraging react-table, I discovered that the typescript types defined in react-table @types are not compatible with the way react-table is used. I worked around it by using "any" as the type for the columns and data, whereas I'd normally try to stick to the proposed types when using TypeScript.*
 
 `Axios` 
 
-*I chose Axios because of my familiarity with it and it is a clean and robust way of getting data.*
+*I chose Axios because of my familiarity with it. It's a clean and robust way of getting data.*
 
 `Hooks`
 
