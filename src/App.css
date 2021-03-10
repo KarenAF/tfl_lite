@@ -172,22 +172,22 @@ table {
 
 /*Start line-name-specific CSS, dynamic: */
 .Bakerloo {
-  background-color: #996633;
+  background-color: #B26300;
   color: white;
 }
 
 .Central {
-  background-color: #CC3333;
+  background-color: #DC241F;
   color: white;
 }
 
 .Circle {
-	background-color: #FFCC00;
+	background-color: #FFD329;
   color: black;
 }
 
 .District {
-	background-color: #006633;
+	background-color: #007D32;
   color: white;
 }
 
@@ -197,13 +197,13 @@ table {
 }
 
 .Hammersmith {
-  background-color: #CC9999;
-  color: white;
+  background-color: #F4A9BE;
+  color: black;
 }
 
 .Jubilee {
-	background-color: #868F98;
-  color: white;
+	background-color: #A1A5A7;
+  color: black;
 }
 
 .London {
@@ -212,28 +212,28 @@ table {
 }
 
 .Metropolitan {
-	background-color: #660066;
+	background-color: #9B0058;
   color: white;
 }
 
 .Northern {
-	background-color: black;
+	background-color: #000000;
   color: white;
 }
 
 .Piccadilly {
-	background-color: #0019a8;
+	background-color: #0019A8;
   color: white;
 }
 
 .Victoria {
-	background-color: #0099CC;
+	background-color: #0098D8;
   color: white;
 }
 
 .Waterloo {
-	background-color: #66CCCC;
-  color: white;
+	background-color: #93CEBA;
+  color: black;
 }
 
 /*End line-name-specific CSS, dynamic: */
