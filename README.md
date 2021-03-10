@@ -40,7 +40,7 @@
 
 4. Further separate components to accommodate scaling
     
-    *Currently, the cycle hire content box and line disruptions content box are separate. The user might want to see both boxes simultaneously if they're making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in `contentBox.tsx.`*
+    *Currently, the cycle-hire content box and line disruptions content box are separate. The user might want to see both boxes simultaneously if they're making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in `contentBox.tsx.`*
 
 
 <br />
