@@ -46,6 +46,7 @@
 <br />
 <br />
 <br />
+
 ## To start this app from the command line:
 
 ### `npm start`
@@ -71,3 +72,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+
+<br />
+
+##Screenshots
+
+![screenshot_1](tfl-lite_screenshot_1.png)
+
+![screenshot_2](tfl-lite_screenshot_2.png)
+
+![screenshot_3](tfl-lite_screenshot_3.png)
