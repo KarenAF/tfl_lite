@@ -1,9 +1,9 @@
 # TFL LITE
 **by Karen Liu**
 
-*This React app, generated using [`create-react-app`](https://github.com/facebookincubator/create-react-app) in the command line, pulls data from the official [TFL (Transport for London) API](https://api.tfl.gov.uk/) and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (`App.js` is regular JS). It greets the user with the whimsy of the prime minister riding one of his Boris bikes on the loading screen. The colors used for the line names are the [official hex colors](http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf) used by TFL.*
+*This React app, generated using [`create-react-app`](https://github.com/facebookincubator/create-react-app) in the command line, pulls data from the official [TFL (Transport for London) API](https://api.tfl.gov.uk/) and displays a menu of available lines. Users can view current service status information and service interruptions, and search for available Santander Cycles for hire (formerly Barclays Cycle Hire) in the London area. TFL LITE uses ES6 and Typescript (`App.js` is regular JS). It greets the user with the whimsy of the prime minister riding one of his Boris bikes on the loading screen. The colors used for the line names are the [official hex colors](http://content.tfl.gov.uk/tfl-colour-standards-issue04.pdf) used by TFL**. *Other requirement targets: The table is sorted by mode then line for better readability. For a more informative experience, the user is informed when there are no search results for their search entry in the Cycle Hire section, rather than just showing blank contents. Next to the line names in the Service-Status menu are small icons (in the form of Unicode characters) that indicate whether the line operates at night (crescent moon ☾) and whether the line is experiencing delays/disruptions (warning ⚠)*
 
-<sub><sup>*Note: The screenshots and screencapture were taken before the line-name colors were updated to the latest official TFL color guide. The [original color guide](https://rodcorp.typepad.com/rodcorp/2005/07/what_colours_ar.html) used was from 2005. The app is currently updated to reflect the new line colors.* </sup></sub>
+<sub><sup>**Note: The screenshots and screencapture were taken before the line-name colors were updated to the latest official TFL color guide. The [original color guide](https://rodcorp.typepad.com/rodcorp/2005/07/what_colours_ar.html) used was from 2005. The app is currently updated to reflect the new line colors.* </sup></sub>
 
 
 ## Dependencies and Tech:
@@ -54,36 +54,44 @@
 
 ## Screenshots
 
-App demo:
+**App demo:**
 <br />
 
 ![screencapture](public/demo.gif)
+<br />
+<br />
 
-App upon loading:
+**App upon loading:**
 <br />
 
 
 ![screenshot_1](public/tfl-lite_screenshot_1.png)
+<br />
+<br />
 
-Clicking on a line name with a service disruption:
+**Clicking on a line name with a service disruption:**
 <br />
 
 ![screenshot_2](public/tfl-lite_screenshot_2.png)
+<br />
+<br />
 
-Clicking on a line name without a service disrution 
+**Clicking on a line name without a service disruption**
 
 and
 
-Results being filtered by search term '34' for Cycle Hire:
+**Results being filtered by search term '34' for Cycle Hire:**
 <br />
 
 ![screenshot_3](public/tfl-lite_screenshot_3.png)
+<br />
+<br />
 
-Waiting for app to load:
+**Waiting for app to load:**
 <br />
 
 ![Boris](public/boris-screenshot.png)
-
+<br />
 <br />
 
 ## To start this app from the command line:

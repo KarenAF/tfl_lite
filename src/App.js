@@ -14,17 +14,17 @@ class App extends Component {
   };
 
   async componentDidMount(){
-    // Define TFL API requests
+    // Define TFL API requests separate from axios call for cleaner code
     try {
       var tflAPI = 'https://api.tfl.gov.uk/Line/Mode/tube,overground,dlr/Status?detail=true';
       var tflBikeAPI = 'https://api.tfl.gov.uk/BikePoint/Search?query=regent';
-      // Make data request
+      // Make data request and store results into state so that api is only called again upon page refresh
       const lineResponse = await axios.get(tflAPI)
       const bikeResponse = await axios.get(tflBikeAPI)
       if (lineResponse.status >= 400){
         throw new Error("something went wrong");
-        // Update state with line data
       }
+      // Update state with line data
       this.setState({
         lineResponse,
         bikeResponse,

@@ -15,6 +15,9 @@ export const CycleSearch = (props: any) => {
         || parseBikeID(object.id).toString().toLowerCase().includes(searchTerm.toLowerCase())
         || object.lat.toString().toLowerCase().includes(searchTerm.toLowerCase())
         || object.lon.toString().toLowerCase().includes(searchTerm.toLowerCase()));
+        if (filteredData.length == 0){
+            return <p>No bike points found for "{searchTerm}."</p>
+        }
         return filteredData.map((object: any)=> <p key={object.id}>{parseBikeID(object.id)} {object.commonName} ({object.lat}, {object.lat})</p>)
     };
 
