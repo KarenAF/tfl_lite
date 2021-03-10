@@ -34,7 +34,7 @@
     
     *If the app got bigger with more pages/components and more API data needed, I would use Redux to manage state. It would allow props to be easily accessed, rather than threading through multiple parent components.*
 
-3. Improving DRY-ness of code; Preventing possible performance issues
+3. Improve DRY-ness of code; Preventing possible performance issues
     
     *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored so as to be reused by new pages. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in `App.js` and passed to various components without limits or pagination.*
 
