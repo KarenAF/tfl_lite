@@ -52,6 +52,7 @@
 ## Screenshots
 
 App demo
+<br />
 ![screencapture](public/demo.gif)
 
 App upon loading
