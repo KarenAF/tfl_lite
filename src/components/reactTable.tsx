@@ -51,6 +51,7 @@ export const ReactTable = (props: any) => {
       rows,
       prepareRow,
     } = useTable({
+      // React-table @types file is out of sync with React-table usage.
       columns: columns as any,
       data: data as any,
     });
