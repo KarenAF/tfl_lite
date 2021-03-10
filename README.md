@@ -1,7 +1,7 @@
 # TFL LITE
 **by Karen Liu**
 
-*This React app pulls data from the official TFL (Transport for London) API and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (`App.js` is regular JS). It also treats the user to a whimsical picture of Boris Johnson riding a bicycle on the loading screen. The colors used for the line names are the official hex colors used by TFL.*
+*This React app pulls data from the official TFL (Transport for London) API (https://api.tfl.gov.uk/) and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (`App.js` is regular JS). It also treats the user to a whimsical picture of Boris Johnson riding a bicycle on the loading screen. The colors used for the line names are the official hex colors used by TFL.*
 
 ## Dependencies and Tech:
 `React-table (version 7.6.3)`
