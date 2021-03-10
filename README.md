@@ -35,7 +35,7 @@
 
 2. **Add Redux**
     
-    *If the app got bigger with more pages/components and more API data needed, I would use Redux to manage state. It would allow props to be easily accessed, rather than threading through multiple parent components, which is especially useful for handling thousands of lines of data, which can sometimes happen with government-provided API's.*
+    *If the app got bigger with more pages/components and more API data needed, I would use Redux to manage state. It would allow props to be easily accessed, rather than threading through multiple parent components. This is especially useful for handling thousands of lines of data, which is sometimes the case with government-provided API's for populous cities/states.*
 
 3. **Improve DRY-ness of code; Prevent possible performance issues**
     
