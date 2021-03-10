@@ -51,6 +51,9 @@
 
 ## Screenshots
 
+App demo
+![screencapture](public/demo.gif)
+
 App upon loading
 ![screenshot_1](public/tfl-lite_screenshot_1.png)
 
