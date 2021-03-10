@@ -1,7 +1,7 @@
 # TFL LITE
 **by Karen Liu**
 
-*This React app pulls data from the official TFL (Transport for London) API and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (App.js is regular JS). It also treats the user to a whimsical picture of Boris Johnson riding a bicycle on the loading screen. The colors used for the line Names are the official hex colors used by TFL.*
+*This React app pulls data from the official TFL (Transport for London) API and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (`App.js` is regular JS). It also treats the user to a whimsical picture of Boris Johnson riding a bicycle on the loading screen. The colors used for the line Names are the official hex colors used by TFL.*
 
 ## Dependencies and Tech:
 `React-table (version 7.6.3)`
@@ -16,11 +16,11 @@
 
 `Hooks`
 
-*Hooks introduce fun, powerful tools that make it easier to do certain things like using state, eliminating the need for multiple lifecycle methods. This is useful for this app in particular, because I can easily change the search term and selected line name*
+*Hooks introduce fun, powerful ways to make things easier and cleaner, like storing and getting data or calling functions after render via `useEffect`, a hook that eliminates the need for multiple lifecycle methods. Using a hook is useful for this app because I can easily change the search term and selected line name via the `useState` hook.*
 
 `Typescript`
 
-*Typescript ensures that the correct types are used and can also make the component page easier to read*
+*Typescript ensures that the correct types are used. It can also make the component page easier to read.*
 
 <br />
 
@@ -36,11 +36,11 @@
 
 3. Improving DRY-ness of code; Preventing possible performance issues
     
-    *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored in order to be re-used by different pages if pages were to be added to the app. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in App.js and passed to various components without limits or pagination.*
+    *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored in order to be re-used by different pages if pages were to be added to the app. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in `App.js` and passed to various components without limits or pagination.*
 
 4. Further separate components to accommodate scaling
     
-    *Currently, the cycle hire content box and line disruptions content box are separate. The user might want to see both boxes simultaneously if they're making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in contentBox.tsx.*
+    *Currently, the cycle hire content box and line disruptions content box are separate. The user might want to see both boxes simultaneously if they're making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in `contentBox.tsx.`*
 
 
 <br />
