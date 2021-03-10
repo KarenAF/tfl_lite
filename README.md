@@ -26,21 +26,25 @@
 
 ## What I would add to TFL LITE:
 
-1. More unit tests
+1. **More unit tests**
 
     *I would write tests to: ensure the search bar returns the correct results based on the user input, check that the line status information matches the data, that the name of the line matches the content shown, and that clicking the line name populates the content box.*
 
-2. Add Redux
+2. **Add Redux**
     
-    *If the app got bigger with more pages/components and more API data needed, I would use Redux to manage state. It would allow props to be easily accessed, rather than threading through multiple parent components.*
+    *If the app got bigger with more pages/components and more API data needed, I would use Redux to manage state. It would allow props to be easily accessed, rather than threading through multiple parent components, which is especially useful for handling thousands of lines of data, which can sometimes happen with government-provided API's.*
 
-3. Improve DRY-ness of code; Preventing possible performance issues
+3. **Improve DRY-ness of code; Prevent possible performance issues**
     
     *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored so as to be reused by new pages. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in `App.js` and passed to various components without limits or pagination.*
 
-4. Further separate components to accommodate scaling
+4. **Further separate components to accommodate scaling**
     
     *Currently, the cycle-hire content box and line disruptions content box are separate. The user might want to see both boxes simultaneously if they're making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the `getDynamicCSS` function in `contentBox.tsx.`*
+
+5. **Fix styling in the Cycle-Hire section**
+
+    *The lower section of the page has inconsisten styling from the top portion due to different handling of the div layout. The changing content caused the menu/content-box dimensions to change, so I fixed the width. If I continued to work on the app UI, I would mirror the layout for both sections.*
 
 
 <br />
