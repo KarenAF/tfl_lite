@@ -11,7 +11,7 @@
 
 `React-table Types (version 7.0.29)`
 
-*I chose to use the React-table library because it's highly-customizable with a lot of users and reviews, which means it's relatively easy to find solutions to issues I might run into. The documentation is weak; however, for this exercise I didn't need a lot of table features. For future projects I may try a different library with better documentation and better support for Typescript. After leveraging react-table, I discovered that the typescript types defined in react-table @types are not compatible with the way react-table is used. I worked around it by using "any" as the type for the columns and data, whereas I'd normally try to stick to the proposed types when using TypeScript.*
+*I chose to use the React-table library because it's highly-customizable with a lot of users and reviews, which means it's relatively easy to find solutions to issues I might run into. The documentation is weak; however, for this exercise I didn't need a lot of table features. For future projects I may try a different library with better documentation and better support for Typescript. After leveraging react-table, I discovered that the typescript types defined in react-table @types are [not compatible with the most recent version of react-table](https://github.com/tannerlinsley/react-table/discussions/2664). I worked around it by [using "any"](https://github.com/tannerlinsley/react-table/issues/1591) as the type for the columns and data, whereas I'd normally try to stick to the proposed types when using TypeScript.*
 
 [`Axios`](https://github.com/axios/axios)
 
