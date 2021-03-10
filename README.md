@@ -47,7 +47,7 @@
 
 5. **Fix styling in the Cycle-Hire section**
 
-    *The lower section of the page has inconsistent styling from the top portion due to different handling of the div layout. Originally, the changing service-disruption content caused the menu/content-box dimensions to change, so I made the width fixed. If I continued to work on the app UI, I would mirror the layout for both sections, and also improve the organization and DRY-ness of the CSS classes and id's.*
+    *The lower section of the page has inconsistent styling from the top portion due to different handling of the div layout. Originally, the changing service-disruption content caused the menu/content-box dimensions to change, so I made the width fixed. If I continued to work on the app UI, I would mirror the layout for both sections, and also improve the organization and DRY-ness of the CSS classes and id's. I would also add the ability to clear the contents of both content boxes for a more intuitive exprience. I would use an onClick method and store the 'clear' status in the state*
 
 
 <br />
