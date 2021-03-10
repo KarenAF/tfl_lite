@@ -75,7 +75,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 <br />
 
-##Screenshots
+## Screenshots
 
 ![screenshot_1](tfl-lite_screenshot_1.png)
 
