@@ -12,7 +12,7 @@
 
 `Axios` 
 
-*I chose Axios because I'm familiar with it and it is a clean and robust way of getting data.*
+*I chose Axios because of my familiarity with it and it is a clean and robust way of getting data.*
 
 `Hooks`
 
