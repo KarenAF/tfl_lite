@@ -2,6 +2,9 @@ export function getDynamicCSS(name: string){
     return name.split(" ")[0];
 };
 
+// The ContentBox component receives the lineStatuses data from the ReactTable component, already filtered by user-selected line name. 
+// The ContentBox component only handles the logic for finding the line statuses with disruptions.
+// It then decides what info to display based on whether it has found service disruptions or not.
 export const ContentBox = (props: any) => {
     const { lineStatuses, lineName } = props; 
     const disruptions = (lineStatuses ?? []).filter((object:any) => object.statusSeverity !== 10);
