@@ -61,6 +61,7 @@ export const ReactTable = (props: any) => {
         <div id="menu">
           <table {...getTableProps()}>
             <thead>
+              {/* react-table syntax gathers the information for the columns here*/}
               {headerGroups.map((headerGroup) => (
                 <tr  className="tableHeaderStyle" {...headerGroup.getHeaderGroupProps()}>
                   {headerGroup.headers.map((column) => (
@@ -69,9 +70,12 @@ export const ReactTable = (props: any) => {
                 </tr>
               ))}
             </thead>
+            {/* react-table syntax gathers the information for the cells here*/}
             <tbody {...getTableBodyProps()}>
               {rows.map((row, i) => {
                 prepareRow(row);
+                {/* getDisruptions is invoked during the row loop, and passed the current index so that the ContentBox component
+                receives the currently iterated lineName, in order to display the service status for the selected line.*/}
                 return (
                   <tr {...row.getRowProps()} onClick={() => getDisruptions(i)}>
                     {row.cells.map((cell) => {
@@ -83,6 +87,10 @@ export const ReactTable = (props: any) => {
             </tbody>
           </table>
         </div>
+        {/* The ContentBox component is mounted only if the user has clicked on a line (i.e. currentLineStatuses is set in state.
+          If the user hasn't clicked anything yet upon page load, the introMessage is shown, to instruct the user on what to do to get started.
+          The ContentBox component is passed the list of line disruptions that have already been filtered by the clicked line name,
+          and it is also separately passed name of the line that has been clicked, via the props, because the linName does not exist in the lineStatuses object.*/}
        {currentLineStatuses ? <ContentBox key="contentBoxKey" lineStatuses = {currentLineStatuses} lineName = {currentLineName}/> : introMessage()}
       </div>
     );

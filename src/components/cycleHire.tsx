@@ -22,6 +22,8 @@ export const CycleHire = (props: any) => {
           <b>Search results:</b>
           <br/>
           <br/>
+          {/* The CycleHire component passes the search term and data from the app.js axios call 
+          to the CycleSearch component to handle the logic for filtering the data against the seach term. */}
           <CycleSearch key="cycleSearchKey" data = {data} searchTerm = {searchTerm} />
         </div>
       </div>
