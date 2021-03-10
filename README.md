@@ -4,7 +4,7 @@
 *This React app pulls data from the official TFL (Transport for London) API and displays a menu of available lines. Users can view current status information and service interruptions and search for available cycles for hire in the London area. TFL LITE uses ES6 and Typescript (App.js is regular JS). It also treats the user to a whimsical picture of Boris Johnson riding a bicycle on the loading screen. The colors used for the line Names are the official hex colors used by TFL.*
 
 ## Dependencies and Tech:
-`React-Table (version 7.6.3)`
+`React-table (version 7.6.3)`
 
 `React-table Types (version 7.0.29)`
 
@@ -16,7 +16,7 @@
 
 `Hooks`
 
-*Hooks introduce fun, powerful tools that make it easier to do certain things like using state, eliminating the need for multiple lifecycle methods.*
+*Hooks introduce fun, powerful tools that make it easier to do certain things like using state, eliminating the need for multiple lifecycle methods. This is useful for this app in particular, because I can easily change the search term and selected line name*
 
 `Typescript`
 
@@ -32,17 +32,27 @@
 
 2. Add Redux
     
-    *The app is small and simple as is; however, if the app were needed to be scaled; if more components were added and more API data were called, Redux would reduce complexity by allowing props to be easily accessed, rather than threading through multiple parent components.*
+    *If the app got bigger with more pages/components and more API data needed, I would use Redux to manage state, which would allow props to be easily accessed, rather than threading through multiple parent components.*
 
 3. Improving DRY-ness of code; Preventing possible performance issues
     
-    *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored in order to be re-used by different pages if pages were to be added to the app. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in in App.js.*
+    *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored in order to be re-used by different pages if pages were to be added to the app. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in App.js and passed to various components without limits or pagination.*
 
 4. Further separate components to accommodate scaling
     
-    *Currently, the cycle hire content box and line disruptions content box are separate (even the the guidelines may have implied using just one box) because I thought about how the user might interact with the search feature. The user might want to see both boxes simultaneously while making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in contentBox.tsx.*
+    *Currently, the cycle hire content box and line disruptions content box are separate. The user might want to see both boxes simultaneously if they're making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in contentBox.tsx.*
+
 
 <br />
+
+## Screenshots
+
+![screenshot_1](tfl-lite_screenshot_1.png)
+
+![screenshot_2](tfl-lite_screenshot_2.png)
+
+![screenshot_3](tfl-lite_screenshot_3.png)
+
 <br />
 
 ## To start this app from the command line:
@@ -70,13 +80,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-
-<br />
-
-## Screenshots
-
-![screenshot_1](tfl-lite_screenshot_1.png)
-
-![screenshot_2](tfl-lite_screenshot_2.png)
-
-![screenshot_3](tfl-lite_screenshot_3.png)
