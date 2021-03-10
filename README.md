@@ -51,21 +51,34 @@
 
 ## Screenshots
 
-App demo
+App demo:
 <br />
+
 ![screencapture](public/demo.gif)
 
-App upon loading
+App upon loading:
+<br />
+
+
 ![screenshot_1](public/tfl-lite_screenshot_1.png)
 
-Clicking on a line name with a service disruption
+Clicking on a line name with a service disruption:
+<br />
+
 ![screenshot_2](public/tfl-lite_screenshot_2.png)
 
-Results being filtered by search term '34'
+Clicking on a line name without a service disrution 
+
+and
+
+Results being filtered by search term '34' for Cycle Hire:
+<br />
+
 ![screenshot_3](public/tfl-lite_screenshot_3.png)
 
-Waiting for app to load
+Waiting for app to load:
 <br />
+
 ![Boris](public/boris-screenshot.png)
 
 <br />
