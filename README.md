@@ -44,8 +44,6 @@
 
 <br />
 <br />
-<br />
-<br />
 
 ## To start this app from the command line:
 
