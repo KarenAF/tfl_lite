@@ -36,11 +36,11 @@
 
 3. Improving DRY-ness of code; Preventing possible performance issues
     
-    *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored in order to be re-used by different pages if pages were to be added to the app. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in in App.js.
+    *As mentioned above, there could be more done to ensure the code is DRY enough to accommodate more components and dependencies being added. For example, the content box could be refactored in order to be re-used by different pages if pages were to be added to the app. The API calls could be organized into a separate page. If the cycle hire API returned hundreds or even thousands of results, it could clog performance with the way it is currently written because all of the data is being pulled in in App.js.*
 
 4. Further separate components to accommodate scaling
     
-    *Currently, the cycle hire content box and line disruptions content box are separate (even the the guidelines may have implied using just one box) because I thought about how the user might interact with the search feature. The user might want to see both boxes simultaneously while making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in contentBox.tsx.
+    *Currently, the cycle hire content box and line disruptions content box are separate (even the the guidelines may have implied using just one box) because I thought about how the user might interact with the search feature. The user might want to see both boxes simultaneously while making a decision on whether to use the subway or hire a bicycle. Overriding the information about service disruptions with the cycle hire search results may result in a frustrating experience. Other parts of the code could also be further separated so that adding future components would not result in repeating of similar functions in multiple files. I did try to export functions for use in other files, such as the getDynamicCSS function in contentBox.tsx.*
 
 <br />
 <br />
