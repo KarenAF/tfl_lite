@@ -19,7 +19,7 @@
 
 [`Hooks`](https://reactjs.org/docs/hooks-overview.html)
 
-*Hooks introduce fun, powerful ways to make things easier and cleaner, like storing and getting data or calling functions after render via `useEffect`, a hook that eliminates the need for multiple lifecycle methods. Using a hook is useful for this app because I can easily change the search term and selected line name via the `useState` hook.*
+*Hooks introduce fun, powerful ways to make things easier and cleaner, like storing and getting data or calling functions after render via `useEffect`, a hook that eliminates the need for multiple lifecycle methods. Hooks can also make an app more performant, for example with `useCallback` (for memoizing functions) and `useMemo` (for memoizing values). Using a hook is useful for this app because I can easily change the search term and selected line name via the `useState` hook.*
 
 [`Typescript`](https://www.typescriptlang.org/docs/)
 
