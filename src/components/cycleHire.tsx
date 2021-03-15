@@ -1,12 +1,26 @@
 import { useState } from 'react';
 import { CycleSearch } from './cycleSearch'
 
-export const CycleHire = (props: any) => {
+type Props = {
+  bikeData: Array<{
+    type: string,
+    additionalProperties: [],
+    children: [],
+    childrenURLs: [],
+    commonName: string,
+    id: string,
+    lat: number,
+    lon: number,
+    placeType: string,
+    url: string
+  }>
+}
+
+export const CycleHire = ({bikeData}: Props) => {
   //useState hook to change searchTerm
   const [searchTerm, setSearchTerm] = useState("");
-  const data = props.bikeData.data ?? [];
   
-  function editSearchTerm(e: any){
+  function editSearchTerm(e: React.ChangeEvent<HTMLInputElement>){
     setSearchTerm(e.target.value);
   };
 
@@ -24,7 +38,7 @@ export const CycleHire = (props: any) => {
           <br/>
           {/* The CycleHire component passes the search term and data from the app.js axios call 
           to the CycleSearch component to handle the logic for filtering the data against the seach term. */}
-          <CycleSearch key="cycleSearchKey" data = {data} searchTerm = {searchTerm} />
+          <CycleSearch key="cycleSearchKey" data = {bikeData} searchTerm = {searchTerm} />
         </div>
       </div>
   );

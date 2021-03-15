@@ -91,7 +91,7 @@ export const ReactTable = (props: any) => {
           If the user hasn't clicked anything yet upon page load, the introMessage is shown, to instruct the user on what to do to get started.
           The ContentBox component is passed the list of line disruptions that have already been filtered by the clicked line name,
           and it is also separately passed name of the line that has been clicked, via the props, because the lineName does not exist in the lineStatuses object.*/}
-       {currentLineStatuses ? <ContentBox key="contentBoxKey" lineStatuses = {currentLineStatuses} lineName = {currentLineName}/> : introMessage()}
+       {currentLineStatuses ? <ContentBox key="contentBoxKey" lineStatuses = {currentLineStatuses!} lineName = {currentLineName!}/> : introMessage()}
       </div>
     );
 }

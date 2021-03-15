@@ -54,7 +54,7 @@ render(){
           </div>
             <img className="img" src="cycle-hire-logo.png" alt="Cycle Hire Logo"/>
             <h1 id="footer"> Cycle Hire </h1>
-          <CycleHire bikeData = {this.state.bikeResponse}/>
+          <CycleHire bikeData = {this.state.bikeResponse.data}/>
          </div>
     );
   }
