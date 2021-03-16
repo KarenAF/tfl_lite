@@ -1,9 +1,22 @@
 import React from 'react';
-export const CycleSearch = (props: any) => {
 
-    const {data} = props;
-    const {searchTerm} = props;
+type Props = {
+    data: Array<{
+      type: string,
+      additionalProperties: [],
+      children: [],
+      childrenURLs: [],
+      commonName: string,
+      id: string,
+      lat: number,
+      lon: number,
+      placeType: string,
+      url: string
+    }>
+    searchTerm: string
+  }
 
+export const CycleSearch = ({data, searchTerm}: Props) => {
     //The bike id is in the format BikePoints_# but only the # is displayed. 
     //parseBikeID returns just the number portion of the bike id
     function parseBikeID(value: any){
