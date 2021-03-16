@@ -11,6 +11,9 @@ export const CycleSearch = (props: any) => {
     };
 
     let dynamicSearch;
+    //useMemo is typically used to optimize performance by storing values and preventing unnecessary calls, 
+    //but currently, it does not increase performance because complexity is low, there is only one prop(searchTerm),
+    //and there is very little data returned. 
     const filteredData = React.useMemo(
         () =>
         data.filter((object: any) => object.commonName.toLowerCase().includes(searchTerm.toLowerCase())
