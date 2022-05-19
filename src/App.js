@@ -44,7 +44,7 @@ render(){
       </div>
     );
   } else
-    // Pass the data from the two API requests to ReactTable CycleHire components respectively via props.
+    // Pass the data from the two API requests to ReactTable and CycleHire components respectively via props.
     return (
          <div id="wrapper" style={{ backgroundImage: "url(/TFL-bg-white.png)" }}>
            <div>

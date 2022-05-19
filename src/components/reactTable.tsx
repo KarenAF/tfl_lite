@@ -74,6 +74,7 @@ export const ReactTable = (props: any) => {
             <tbody {...getTableBodyProps()}>
               {rows.map((row, i) => {
                 prepareRow(row);
+                // eslint-disable-next-line no-lone-blocks
                 {/* getDisruptions is invoked during the row loop, and passed the current index so that the ContentBox component
                 receives the currently iterated lineName, in order to display the service status for the selected line.*/}
                 return (
